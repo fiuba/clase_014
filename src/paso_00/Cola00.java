@@ -10,7 +10,7 @@ public class Cola00 {
 		contenido = new ArrayList();
 	}
 	
-	public void agregar(Integer valor) {
+	public void agregar(Object valor) {
 		contenido.add(valor);				
 	}
 
@@ -22,4 +22,11 @@ public class Cola00 {
 		}
 	}
 
+	public boolean noEstaVacia() {
+		return contenido.size() != 0;
+	}
+
+	public boolean estaVacia() {
+		return !noEstaVacia();
+	}
 }
