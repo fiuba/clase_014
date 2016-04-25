@@ -1,11 +1,14 @@
-package paso_00;
+package paso_01;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Pila00  {
+import paso_00.PilaVacia;
+
+public class Pila01 implements Iterable {
 	private ArrayList contenido;
 	
-	public Pila00() {
+	public Pila01() {
 		contenido = new ArrayList();
 	}
 	
@@ -28,5 +31,12 @@ public class Pila00  {
 	public boolean estaVacia() {
 		return !noEstaVacia();
 	}
+
+	@Override
+	public Iterator iterator() {
+		
+		return new IteradorPila(this);
+	}
+
 
 }

@@ -17,7 +17,21 @@ public class TestPila00 {
 		pila.agregar(new Integer(1));
 		pila.agregar(new Integer(2));
 		
-		pila.quitar().equals(new Integer(2));
+		assertEquals(pila.quitar(),  new Integer(2));
+	}
+
+	@Test
+	public void testAlAgregarUnElementoNoEstaVacia() throws PilaVacia {
+		Pila00 pila = new Pila00();
+		
+		pila.agregar(new Integer(2));
+		assertTrue(pila.noEstaVacia());
+	}
+
+	@Test
+	public void testCuandoSeCreaEstaVacia() throws PilaVacia {
+		Pila00 pila = new Pila00();
+		assertTrue(pila.estaVacia());
 	}
 
 	@Test(expected=PilaVacia.class)

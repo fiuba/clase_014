@@ -16,7 +16,7 @@ public class TestCola00 {
 		cola.agregar(new Integer(1));
 		cola.agregar(new Integer(2));
 		
-		cola.quitar().equals(new Integer(2));
+		assertEquals(cola.quitar(), new Integer(1));
 	}
 
 
