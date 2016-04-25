@@ -14,8 +14,8 @@ public class TestPila00 {
 		Pila00 pila = new Pila00();
 		
 		// Equivalentes
-		pila.agregar(new Integer(1));
-		pila.agregar(new Integer(2));
+		pila.apilar(new Integer(1));
+		pila.apilar(new Integer(2));
 		
 		assertEquals(pila.quitar(),  new Integer(2));
 	}
@@ -24,7 +24,7 @@ public class TestPila00 {
 	public void testAlAgregarUnElementoNoEstaVacia() throws PilaVacia {
 		Pila00 pila = new Pila00();
 		
-		pila.agregar(new Integer(2));
+		pila.apilar(new Integer(2));
 		assertTrue(pila.noEstaVacia());
 	}
 

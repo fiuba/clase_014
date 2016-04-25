@@ -17,8 +17,8 @@ public class TestPila01 {
 		
 		Iterator i = pila.iterator();
 
-		pila.agregar(new Integer(1));
-		pila.agregar(new Integer(2));
+		pila.apilar(new Integer(1));
+		pila.apilar(new Integer(2));
 	
 		assertTrue(i.hasNext());
 	}
@@ -28,8 +28,8 @@ public class TestPila01 {
 		Pila01 pila = new Pila01();		
 		Iterator i = pila.iterator();
 		
-		pila.agregar(new Integer(1));
-		pila.agregar(new Integer(2));
+		pila.apilar(new Integer(1));
+		pila.apilar(new Integer(2));
 
 		assertEquals(i.next(), new Integer(2));
 		assertEquals(i.next(), new Integer(1));

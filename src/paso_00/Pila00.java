@@ -9,7 +9,7 @@ public class Pila00  {
 		contenido = new ArrayList();
 	}
 	
-	public void agregar(Integer valor) {
+	public void apilar(Integer valor) {
 		contenido.add(valor);		
 	}
 
